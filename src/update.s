@@ -34,7 +34,7 @@ FatEnd:       .con    0,0
 
               .section code
 
-              .name   "-CLILUP 1B" ; The name of the module
+              .name   "-CLILUP 2A" ; The name of the module
 Header:       rtn
 
 
@@ -52,5 +52,5 @@ Header:       rtn
               .con    0             ; I/O
               .con    0             ; Deep wake-up
               .con    0             ; Memory lost
-              .text   "B1UL"        ; Identifier LU-1B
+              .text   "A2UC"        ; Identifier CU-2A
               .con    0             ; checksum position
