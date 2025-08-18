@@ -1,5 +1,10 @@
-HP-41CL Update module using HP-IL
-=================================
+# HP-41CL Update module using HP-IL
+
+[![HP-41](https://img.shields.io/badge/HP--41-Calculator-orange)](https://en.wikipedia.org/wiki/HP-41C)
+[![Assembly](https://img.shields.io/badge/Assembly-6E4C13?style=flat&logo=assembly&logoColor=white)](https://en.wikipedia.org/wiki/Assembly_language)
+[![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
+[![GitHub stars](https://img.shields.io/github/stars/isene/CLILUP.svg)](https://github.com/isene/CLILUP/stargazers)
+[![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
  
 This module for the HP-41CL contains some instructions that allow reading
 and writing 16-bit images to and from HP-IL mass storage devices.
