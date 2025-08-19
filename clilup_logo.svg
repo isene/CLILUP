@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="200" fill="#0a0e27"/>
+  
+  <!-- Terminal frame -->
+  <rect x="30" y="40" width="140" height="120" rx="5" fill="#1a1e37" stroke="#444" stroke-width="2"/>
+  
+  <!-- Command prompt with typing animation -->
+  <g font-family="monospace" font-size="12" fill="#00ff00">
+    <text x="40" y="60">$ clilup</text>
+    <text x="40" y="80" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="1s" begin="0.5s" fill="freeze"/>
+      Uploading...
+    </text>
+  </g>
+  
+  <!-- Upload arrow animation -->
+  <g transform="translate(100, 100)">
+    <line x1="0" y1="20" x2="0" y2="-20" stroke="#00ff00" stroke-width="3" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="y1" values="20;-20" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </line>
+    <path d="M -8,-10 L 0,-20 L 8,-10" stroke="#00ff00" stroke-width="3" fill="none" opacity="0">
+      <animate attributeName="opacity" values="0;1;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="transform" type="translate" values="0,30;0,-10" dur="2s" begin="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Cloud icon at top -->
+  <g transform="translate(100, 35)" fill="#4a90e2" opacity="0.8">
+    <circle cx="-10" cy="0" r="8"/>
+    <circle cx="10" cy="0" r="8"/>
+    <circle cx="0" cy="-5" r="10"/>
+    <rect x="-10" y="-2" width="20" height="10" fill="#4a90e2"/>
+    <!-- Pulse effect -->
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#4a90e2" stroke-width="2" opacity="0">
+      <animate attributeName="r" values="20;30;20" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Progress dots -->
+  <g fill="#00ff00">
+    <circle cx="85" cy="130" r="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="130" r="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="115" cy="130" r="2">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Ruby gem -->
+  <g transform="translate(170, 40) scale(0.25)">
+    <path d="M -20 -10 L 20 -10 L 30 0 L 20 10 L -20 10 L -30 0 Z" fill="#CC342D" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="180" font-family="monospace" font-size="18" fill="#fff" text-anchor="middle" font-weight="bold">CLILUP</text>
+  <text x="100" y="195" font-family="monospace" font-size="10" fill="#888" text-anchor="middle">CLI Link Uploader</text>
+</svg>

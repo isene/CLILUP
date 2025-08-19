@@ -5,9 +5,8 @@
 [![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
 [![GitHub stars](https://img.shields.io/github/stars/isene/CLILUP.svg)](https://github.com/isene/CLILUP/stargazers)
 [![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
- 
-This module for the HP-41CL contains some instructions that allow reading
-and writing 16-bit images to and from HP-IL mass storage devices.
+
+<img src="clilup_logo.svg" align="left" width="150" height="150"> This module for the HP-41CL contains some instructions that allow reading and writing 16-bit images to and from HP-IL mass storage devices.
 
 In addition there is an RPN program that is used to control the process which
 is better documented in the  [hp-41cl_update](https://github.com/isene/hp-41cl_update/)
